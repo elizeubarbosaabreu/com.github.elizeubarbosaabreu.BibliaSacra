@@ -1,0 +1,58 @@
+{
+    "app-id": "com.github.elizeubarbosaabreu.BibliaSacra",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "5.15-23.08",
+    "sdk": "org.kde.Sdk",
+    "command": "biblia",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--device=dri",
+        "--filesystem=home/.local/share/xiphos:create"
+    ],
+    "modules": [
+        {
+            "name": "python3-pyqt5",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --no-index --find-links=/run/build/python3-pyqt5 --prefix=${FLATPAK_DEST} PyQt5==5.15.11 PyQt5-sip==12.18.0 PyQt5-Qt5==5.15.19"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/84/57/29e29e6fc5eb40aa0487c66e70c109a7d2af651f4e41256b20337e14/PyQt5-5.15.11-cp38-abi3-manylinux_2_17_x86_64.whl",
+                    "sha256": "cd672a6738d1ae33ef7d9efa8e6cb0a1525ecf53ec86da80a9e1b6ec38c8d0f1"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d0/28/0305003b85205241203d02420337e14/pyqt5_sip-12.18.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.whl",
+                    "sha256": "ead5e0a64ad852ac60797989d8444a6a5bd834768536b04a07b40b2937d922f6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/cb/ed/89c26e7f04a20520337e14/pyqt5_qt5-5.15.19-py3-none-manylinux2014_x86_64.whl",
+                    "sha256": "31421d9c31fb29a8faee4b8b3c32658fb51a9e8c4c708075121162fa44faf80e"
+                }
+            ]
+        },
+        {
+            "name": "biblia",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm755 biblia.py /app/bin/biblia",
+                "install -Dm644 biblia.png /app/share/icons/hicolor/256x256/apps/com.github.elizeubarbosaabreu.BibliaSacra.png",
+                "install -Dm644 com.github.elizeubarbosaabreu.BibliaSacra.desktop /app/share/applications/com.github.elizeubarbosaabreu.BibliaSacra.desktop",
+                "install -Dm644 com.github.elizeubarbosaabreu.BibliaSacra.metainfo.xml /app/share/metainfo/com.github.elizeubarbosaabreu.BibliaSacra.metainfo.xml"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/elizeubarbosaabreu/biblia-leitor.git",
+                    "tag": "v2.2"
+                }
+            ]
+        }
+    ]
+}
