@@ -22,17 +22,17 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/84/57/29e29e6fc5eb40aa0487c66e70c109a7d2af651f4e41256b20337e14/PyQt5-5.15.11-cp38-abi3-manylinux_2_17_x86_64.whl",
+                    "url": "https://files.pythonhosted.org/packages/b4/8c/4065950f9d013c4b2e588fe33cf04e564c2322842d84dbcbce5ba1dc28b0/PyQt5-5.15.11-cp38-abi3-manylinux_2_17_x86_64.whl",
                     "sha256": "cd672a6738d1ae33ef7d9efa8e6cb0a1525ecf53ec86da80a9e1b6ec38c8d0f1"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d0/28/0305003b85205241203d02420337e14/pyqt5_sip-12.18.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.whl",
-                    "sha256": "ead5e0a64ad852ac60797989d8444a6a5bd834768536b04a07b40b2937d922f6"
+                    "url": "https://files.pythonhosted.org/packages/79/53/64373ba9311288b0ea6b5ab375d9c9743a41ac93df7137655498c95a08e5/pyqt5_sip-12.18.0-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.whl",
+                    "sha256": "521729e4ce44db555005f4e6987c4a5164d45ea03f5a7d08519813d4776acd15"
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/cb/ed/89c26e7f04a20520337e14/pyqt5_qt5-5.15.19-py3-none-manylinux2014_x86_64.whl",
+                    "url": "https://files.pythonhosted.org/packages/de/a0/dd9889ed9bf100d6d8b9d608b2689dc2a7f871f9489a0c563a8cf78c329f/pyqt5_qt5-5.15.19-py3-none-manylinux2014_x86_64.whl",
                     "sha256": "31421d9c31fb29a8faee4b8b3c32658fb51a9e8c4c708075121162fa44faf80e"
                 }
             ]
